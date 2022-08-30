@@ -1,0 +1,16 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          classlink:
+            client-id: c1657796430045fe2a73b61c4ae2f5bbe6f58b3e0755
+            client-secret: f1040feba621f3324e89c35a31bd04f5
+            redirect-uri: http://localhost:8080/user
+            scope: openid
+            authorization-grant-type: authorization_code
+        provider:
+          classlink:
+            authorization-uri: https://launchpad.classlink.com/oauth2/v2/auth
+            token-uri: https://launchpad.classlink.com/oauth2/v2/token
+            jwk-set-uri: https://launchpad.classlink.com/oauth2/v2/jwks
