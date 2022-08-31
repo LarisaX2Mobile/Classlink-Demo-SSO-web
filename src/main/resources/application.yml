@@ -6,8 +6,8 @@ spring:
           classlink:
             client-id: c1657796430045fe2a73b61c4ae2f5bbe6f58b3e0755
             client-secret: f1040feba621f3324e89c35a31bd04f5
-            redirect-uri: http://localhost:8080/user
-            scope: openid
+            redirect-uri: "{baseUrl}/callback"
+            scope: openid, profile
             authorization-grant-type: authorization_code
         provider:
           classlink:
